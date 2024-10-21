@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="go">أبدأ</string>
+    <string name="welcom_in_the_cairo_metro">مرحبًا بك في مترو القاهرة</string>
+    <string name="enter_current_station">أدخل المحطة الحالية</string>
+    <string name="enter_arrival_station">أدخل محطة الوصول</string>
+    <string name="summary">ملخص</string>
+    <string name="enter_place_here">أدخل المكان هنا</string>
+    <string name="nearest_station_info">بيانات أقرب محطة</string>
+    <string name="station_name">اسم المحطة</string>
+    <string name="summary_text_here">الملخص هنا</string>
+    <string name="distance">المسافة</string>
+    <string name="distance_info_here">بيانات المسافة</string>
+    <string name="route">الطريق:</string>
+    <string name="number_of_stations">عدد المحطات:</string>
+    <string name="direction">الاتجاه:</string>
+    <string name="time">الوقت</string>
+    <string name="ticket_price">سعر التذكرة:</string>
+    <string name="start">أبدأ</string>
+    <string name="rout">الطريق</string>
+    <string name="settings">الإعدادات</string>
+    <string name="choose_a_language">اختر اللغة:</string>
+    <string name="arabic">العربية</string>
+    <string name="english">الإنجليزية</string>
+    <string name="please_select">الرجاء الاختيار</string>
+    <string name="please_select_stations">الرجاء اختيار محطتي البداية والنهاية</string>
+    <string name="invalid_start_station">تم اختيار محطة بداية غير صالحة</string>
+    <string name="invalid_end_station">تم اختيار محطة نهاية غير صالحة</string>
+    <string name="language_toggle_en">EN</string>
+    <string name="language_toggle_ar">AR</string>
+    <string name="no_route_selected">لم يتم اختيار مسار بعد</string>
+    <string name="current_station_not_in_route">المحطة الحالية ليست في المسار المحدد</string>
+    <string name="remaining_stations">المحطات المتبقية: %d</string>
+    <string name="remaining_time">الوقت المتبقي: %d</string>
+    <string name="switch_stations">تبديل</string>
+    <string name="calculate">حساب</string>
+    <string name="text_to_speech">النص إلى كلام</string>
+    <string name="map">الخريطة</string>
+    <string name="nearest_station">أقرب محطة</string>
+    <string name="remaining_distance">المسافة المتبقية</string>
+    <string name="switch_to_arabic">التبديل إلى العربية</string>
+    <string name="switch_to_english">التبديل إلى الإنجليزية</string>
+    <string name="invalid_station" />
+
+    <string-array name="station_names">
+        <item>العباسية</item>
+        <item>عبده باشا</item>
+        <item>عدلي منصور</item>
+        <item>أحمد عرابي</item>
+        <item>عين حلوان</item>
+        <item>عين شمس</item>
+        <item>الأهرام</item>
+        <item>السيدة زينب</item>
+        <item>الشهداء</item>
+        <item>ألف مسكن</item>
+        <item>العتبة</item>
+        <item>باب الشعرية</item>
+        <item>إستاد القاهرة</item>
+        <item>جامعة القاهرة</item>
+        <item>دار السلام</item>
+        <item>الدقي</item>
+        <item>البحوث</item>
+        <item>البوهي</item>
+        <item>الجيش</item>
+        <item>الهايكستب</item>
+        <item>القومية</item>
+        <item>المرج</item>
+        <item>النزهة</item>
+        <item>نادي الشمس</item>
+        <item>الدمرداش</item>
+        <item>المعصرة</item>
+        <item>الملك الصالح</item>
+        <item>المطرية</item>
+        <item>المنيب</item>
+        <item>الزهراء</item>
+        <item>عزبة النخل</item>
+        <item>أرض المعارض</item>
+        <item>فيصل</item>
+        <item>غمرة</item>
+        <item>الجيزة</item>
+        <item>حدائق المعادي</item>
+        <item>حدائق حلوان</item>
+        <item>حدائق الزيتون</item>
+        <item>حمامات القبة</item>
+        <item>هارون</item>
+        <item>ميدان هليوبوليس</item>
+        <item>حلمية الزيتون</item>
+        <item>حلوان</item>
+        <item>جامعة حلوان</item>
+        <item>هشام بركات</item>
+        <item>إمبابة</item>
+        <item>كيت كات</item>
+        <item>الخلفاوي</item>
+        <item>كوبري القبة</item>
+        <item>كلية البنات</item>
+        <item>كلية الزراعة</item>
+        <item>كوزيكا</item>
+        <item>المعادي</item>
+        <item>منشية الصدر</item>
+        <item>مار جرجس</item>
+        <item>مسرة</item>
+        <item>ماسبيرو</item>
+        <item>المظلات</item>
+        <item>محمد نجيب</item>
+        <item>جمال عبد الناصر</item>
+        <item>المرج الجديدة</item>
+        <item>عمر بن الخطاب</item>
+        <item>أم المصريين</item>
+        <item>الأوبرا</item>
+        <item>القبة</item>
+        <item>الطريق الدائري</item>
+        <item>محور روض الفرج</item>
+        <item>روض الفرج</item>
+        <item>سعد زغلول</item>
+        <item>السادات</item>
+        <item>صفاء حجازي</item>
+        <item>ساقية مكي</item>
+        <item>مساكن المعادي</item>
+        <item>سراي القبة</item>
+        <item>شبرا الخيمة</item>
+        <item>سانت تريزا</item>
+        <item>السودان</item>
+        <item>طرة الأسمنت</item>
+        <item>طرة البلد</item>
+        <item>وادي حوف</item>
+    </string-array>
+
+    <string name="app_name">تطبيق المترو</string>
+    <string name="language_switch">EN</string>
+    <string name="language_button_ar">EN</string>
+    <string name="language_button_en">AR</string>
+    <!-- Add more Arabic translations here -->
+
+    <string name="nearest_station_title">أقرب محطة</string>
+    <string name="find_nearest_station">البحث عن أقرب محطة</string>
+    <string name="nearest_to_destination">الأقرب إلى الوجهة</string>
+    <string name="enter_destination">أدخل الوجهة</string>
+    <string name="find_nearest_to_destination">البحث عن الأقرب إلى الوجهة</string>
+    <string name="no_location_permission">إذن الموقع مطلوب للعثور على أقرب محطة</string>
+    <string name="station_not_found">لم يتم العثور على المحطة</string>
+    <string name="distance_format">%.2f كم</string>
+
+    <string name="start_station">محطة البداية</string>
+    <string name="end_station">محطة النهاية</string>
+    <string name="find_route">البحث عن المسار</string>
+    <string name="select_start_station">اختر محطة البداية</string>
+    <string name="select_end_station">اختر محطة النهاية</string>
+    <string name="route_not_found">لم يتم العثور على المسار</string>
+
+    <string name="enable_tts">تفعيل تحويل النص إلى كلام</string>
+
+</resources>

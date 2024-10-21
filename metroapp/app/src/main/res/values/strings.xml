@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">Metro App</string>
+    <string name="go">Go</string>
+    <string name="welcom_in_the_cairo_metro">Welcome to The Cairo Metro</string>
+    <string name="enter_current_station">Enter Current Station</string>
+    <string name="enter_arrival_station">Enter Arrival Station</string>
+    <string name="summary">summary</string>
+    <string name="enter_place_here">enter place here</string>
+    <string name="nearest_station_info">nearest station info</string>
+    <string name="station_name">station name</string>
+    <string name="summary_text_here">summary text here</string>
+    <string name="distance">distance</string>
+    <string name="distance_info_here">distance info here</string>
+    <string name="route">route:</string>
+    <string name="number_of_stations">stations</string>
+    <string name="direction">direction:</string>
+    <string name="time">time</string>
+    <string name="ticket_price">ticket price:</string>
+    <string name="start">start</string>
+    <string name="rout">route</string>
+    <string name="settings">settings</string>
+    <string name="choose_a_language">choose a language:</string>
+    <string name="arabic">Arabic</string>
+    <string name="english">English</string>
+    <string name="please_select">Please select</string>
+    <string name="please_select_stations">Please select both start and end stations</string>
+    <string name="invalid_start_station">Invalid start station selected</string>
+    <string name="invalid_end_station">Invalid end station selected</string>
+    <string name="start_station">Start Station</string>
+    <string name="end_station">End Station</string>
+    <string name="find_route">Find Route</string>
+    <string name="nearest_station">Nearest Station</string>
+    <string name="select_start_station">Select start station</string>
+    <string name="select_end_station">Select end station</string>
+    <string name="route_not_found">Route not found</string>
+    <string name="language_switch">AR</string>
+
+    <string-array name="station_names">
+        <item>Abbassia</item>
+        <item>Abdou Pasha</item>
+        <item>Adly Mansour</item>
+        <item>Ahmed Orabi</item>
+        <item>Ain Helwan</item>
+        <item>Ain Shams</item>
+        <item>Al-Ahram</item>
+        <item>Al-Sayeda Zeinab</item>
+        <item>Al-Shohadaa</item>
+        <item>Alf Maskan</item>
+        <item>Attaba</item>
+        <item>Bab El Shaaria</item>
+        <item>Cairo Stadium</item>
+        <item>Cairo University</item>
+        <item>Dar El-Salam</item>
+        <item>Dokki</item>
+        <item>El Bohoth</item>
+        <item>El Bohy</item>
+        <item>El Geish</item>
+        <item>El Haykestep</item>
+        <item>El Kawmeya</item>
+        <item>El Marg</item>
+        <item>El Nozha</item>
+        <item>El Shams Club</item>
+        <item>El-Demerdash</item>
+        <item>El-Maasara</item>
+        <item>El-Malek El-Saleh</item>
+        <item>El-Matareyya</item>
+        <item>El-Mounib</item>
+        <item>El-Zahraa</item>
+        <item>Ezbet El-Nakhl</item>
+        <item>Fair Zone</item>
+        <item>Faisal</item>
+        <item>Ghamra</item>
+        <item>Giza</item>
+        <item>Hadayek El-Maadi</item>
+        <item>Hadayek Helwan</item>
+        <item>Hadayeq El-Zaitoun</item>
+        <item>Hammamat El-Qobba</item>
+        <item>Haroun</item>
+        <item>Heliopolis Square</item>
+        <item>Helmeyet El-Zaitoun</item>
+        <item>Helwan</item>
+        <item>Helwan University</item>
+        <item>Hesham Barakat</item>
+        <item>Imbaba</item>
+        <item>Kit Kat</item>
+        <item>Khalafawy</item>
+        <item>Kobri El-Qobba</item>
+        <item>Koleyet El-Banat</item>
+        <item>Kolleyyet El-Zeraa</item>
+        <item>Kozzika</item>
+        <item>Maadi</item>
+        <item>Manshiet El-Sadr</item>
+        <item>Mar Girgis</item>
+        <item>Masarra</item>
+        <item>Maspero</item>
+        <item>Mezallat</item>
+        <item>Mohamed Naguib</item>
+        <item>Nasser</item>
+        <item>New El-Marg</item>
+        <item>Omar Ibn El-Khattab</item>
+        <item>Omm El-Masryeen</item>
+        <item>Opera</item>
+        <item>Qobaa</item>
+        <item>Ring Road</item>
+        <item>Rod El Farag Corridor</item>
+        <item>Rod El-Farag</item>
+        <item>Saad Zaghloul</item>
+        <item>Sadat</item>
+        <item>Safaa Hegazy</item>
+        <item>Sakiat Mekky</item>
+        <item>Sakanat El-Maadi</item>
+        <item>Saray El-Qobba</item>
+        <item>Shubra El-Kheima</item>
+        <item>St. Teresa</item>
+        <item>Sudan</item>
+        <item>Tora El-Asmant</item>
+        <item>Tora El-Balad</item>
+        <item>Wadi Hof</item>
+    </string-array>
+
+    <string name="language_toggle_en">EN</string>
+    <string name="language_toggle_ar">AR</string>
+    <string name="no_route_selected" />
+    <string name="current_station_not_in_route">Current station is not in the route</string>
+    <string name="remaining_stations">Remaining stations: %d</string>
+    <string name="remaining_time">Remaining time: %d minutes</string>
+    <string name="switch_stations">Switch</string>
+    <string name="calculate">Calculate</string>
+    <string name="text_to_speech">Text-to-Speech</string>
+    <string name="map">Map</string>
+    <string name="remaining_distance">Remaining Distance</string>
+
+    <string name="switch_to_arabic">Switch to Arabic</string>
+    <string name="switch_to_english">Switch to English</string>
+    <string name="invalid_station" />
+    <string name="language_button_ar">AR</string>
+    <string name="language_button_en">EN</string>
+
+    <string name="nearest_station_title">Nearest Station</string>
+    <string name="find_nearest_station">Find Nearest Station</string>
+    <string name="nearest_to_destination">Nearest To Destination</string>
+    <string name="enter_destination">Enter destination</string>
+    <string name="find_nearest_to_destination">Find Nearest To Destination</string>
+    <string name="no_location_permission">Location permission is required to find the nearest station</string>
+    <string name="station_not_found">Station not found</string>
+    <string name="distance_format">%.2f km</string>
+    <string name="enable_tts">Enable Text-to-Speech</string>
+</resources>
