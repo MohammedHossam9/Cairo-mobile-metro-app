@@ -39,6 +39,7 @@
     <string name="map">الخريطة</string>
     <string name="nearest_station">أقرب محطة</string>
     <string name="remaining_distance">المسافة المتبقية</string>
+    <string name="share">مشاركة</string>
     <string name="switch_to_arabic">التبديل إلى العربية</string>
     <string name="switch_to_english">التبديل إلى الإنجليزية</string>
     <string name="invalid_station" />

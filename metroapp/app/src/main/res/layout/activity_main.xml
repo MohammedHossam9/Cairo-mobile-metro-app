@@ -10,29 +10,47 @@
 
     <ImageView
         android:id="@+id/logoImageView"
-        android:layout_width="388dp"
-        android:layout_height="114dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
         android:src="@drawable/metro_logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/languageButton"
+        android:layout_width="56dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/language_button_ar"
+        android:textSize="12sp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/inputCard"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:layout_constraintTop_toBottomOf="@id/logoImageView">
+        android:layout_margin="20dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:layout_constraintTop_toBottomOf="@id/logoImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="@color/card_background">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="20dp">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/startStationLayout"
@@ -40,13 +58,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:hint="@string/start_station">
+                android:hint="@string/start_station"
+                app:startIconDrawable="@drawable/ic_map"
+                app:startIconTint="@color/line_1_color">
 
                 <AutoCompleteTextView
                     android:id="@+id/startSpinner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:textSize="16sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -55,41 +76,53 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:hint="@string/end_station">
+                android:layout_marginBottom="20dp"
+                android:hint="@string/end_station"
+                app:startIconDrawable="@drawable/ic_map"
+                app:startIconTint="@color/error_color">
 
                 <AutoCompleteTextView
                     android:id="@+id/endSpinner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:textSize="16sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:baselineAligned="false">
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/switchButton"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                    android:layout_width="4dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
                     android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
                     android:onClick="Switch"
                     android:text="@string/switch_stations"
-                    app:icon="@drawable/ic_switch" />
+                    android:textSize="13sp"
+                    app:icon="@drawable/ic_switch"
+                    app:iconGravity="textStart"
+                    app:iconPadding="4dp" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/calculateButton"
-                    android:layout_width="18dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
                     android:layout_weight="1"
+                    android:layout_marginStart="8dp"
                     android:onClick="calc"
                     android:text="@string/calculate"
-                    app:icon="@drawable/ic_calculate" />
+                    android:textSize="13sp"
+                    app:icon="@drawable/ic_calculate"
+                    app:iconGravity="textStart"
+                    app:iconPadding="4dp" />
 
             </LinearLayout>
 
@@ -99,53 +132,44 @@
 
     <LinearLayout
         android:id="@+id/additionalButtonsLayout"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputCard">
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/inputCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:baselineAligned="false">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/nearestStationButton"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="56dp"
             android:layout_weight="1"
+            android:layout_marginEnd="8dp"
             android:text="@string/nearest_station"
-            app:icon="@drawable/ic_nearest" />
+            android:textSize="13sp"
+            app:icon="@drawable/ic_nearest"
+            app:iconGravity="textStart"
+            app:iconPadding="4dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mapButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:onClick="map"
+            android:text="@string/map"
+            android:textSize="13sp"
+            app:icon="@drawable/ic_map"
+            app:iconGravity="textStart"
+            app:iconPadding="4dp" />
 
     </LinearLayout>
-
-    <!-- Add this button to your existing layout -->
-
-    <Button
-        android:id="@+id/languageButton"
-        android:layout_width="68dp"
-        android:layout_height="52dp"
-        android:text="@string/language_button_ar"
-        app:layout_constraintBottom_toTopOf="@+id/logoImageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.034"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/mapButton"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="116dp"
-        android:layout_height="57dp"
-        android:layout_marginBottom="16dp"
-        android:layout_weight="1"
-        android:onClick="map"
-        android:text="@string/map"
-        app:icon="@drawable/ic_map"
-        app:layout_constraintBottom_toTopOf="@+id/additionalButtonsLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.908" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

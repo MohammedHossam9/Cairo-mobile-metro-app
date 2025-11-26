@@ -129,6 +129,7 @@
     <string name="text_to_speech">Text-to-Speech</string>
     <string name="map">Map</string>
     <string name="remaining_distance">Remaining Distance</string>
+    <string name="share">Share</string>
 
     <string name="switch_to_arabic">Switch to Arabic</string>
     <string name="switch_to_english">Switch to English</string>

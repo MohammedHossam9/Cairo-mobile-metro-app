@@ -34,7 +34,9 @@ dependencies {
     implementation "androidx.work:work-runtime:2.9.1"
     implementation 'com.github.mumayank:AirLocation:2.5.2'
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.3'
-    implementation 'com.github.gayanvoice:android-animations:1.0.2'
+    // Removed unavailable dependency 'com.github.gayanvoice:android-animations:1.0.2'
+    // If you need that library, add the correct repository or replace with a maintained alternative.
+    // implementation 'com.github.gayanvoice:android-animations:1.0.2'
     implementation 'com.github.nisrulz:sensey:1.9.0'
     implementation 'com.daimajia.androidanimations:library:2.4@aar'
 
@@ -48,4 +50,5 @@ dependencies {
     implementation 'com.google.android.gms:play-services-location:18.0.0'
     implementation 'com.android.volley:volley:1.2.1'
     implementation 'com.google.android.material:material:1.5.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
 }

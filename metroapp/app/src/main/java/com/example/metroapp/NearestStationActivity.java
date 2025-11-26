@@ -17,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.example.metroapp.data.StationData;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 
@@ -79,7 +80,7 @@ public class NearestStationActivity extends AppCompatActivity {
         Station nearestStation = null;
         float minDistance = Float.MAX_VALUE;
 
-        for (Station station : Station.locations) {
+        for (Station station : StationData.ALL_STATIONS_WITH_COORDINATES) {
             float[] results = new float[1];
             Location.distanceBetween(currentLocation.getLatitude(), currentLocation.getLongitude(),
                                          station.getLatitude(), station.getLongitude(), results);
@@ -92,10 +93,9 @@ public class NearestStationActivity extends AppCompatActivity {
         }
 
         if (nearestStation != null) {
-            String result = String.format("%s (%.2f km)", 
+            String result = String.format("📍 %s\n📏 %.2f km away",
                                           nearestStation.getName(), minDistance / 1000);
             nearestStationEditText.setText(result);
-            nearestStationEditText.setEnabled(true); // Make sure the text is not faded
         } else {
             nearestStationEditText.setText("No station found");
         }
@@ -111,8 +111,8 @@ public class NearestStationActivity extends AppCompatActivity {
         Geocoder geocoder = new Geocoder(this);
         try {
             List<Address> addressList = geocoder.getFromLocationName(destination, 1);
-            if (addressList.isEmpty()) {
-                Toast.makeText(this, "Enter correct place", Toast.LENGTH_SHORT).show();
+            if (addressList == null || addressList.isEmpty()) {
+                Toast.makeText(this, "Could not find location", Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -123,7 +123,7 @@ public class NearestStationActivity extends AppCompatActivity {
             Station nearestStation = null;
             float minDistance = Float.MAX_VALUE;
 
-            for (Station station : Station.locations) {  // Use Station.locations instead of stations
+            for (Station station : StationData.ALL_STATIONS_WITH_COORDINATES) {
                 Location stationLocation = new Location("");
                 stationLocation.setLatitude(station.getLatitude());
                 stationLocation.setLongitude(station.getLongitude());
@@ -136,7 +136,7 @@ public class NearestStationActivity extends AppCompatActivity {
             }
 
             if (nearestStation != null) {
-                String result = String.format("Nearest station to %s: %s (%.2f km)", 
+                String result = String.format("📍 Nearest to %s:\n🚉 %s\n📏 %.2f km away",
                                               destination, nearestStation.getName(), minDistance / 1000);
                 nearestToDestinationResultTextView.setText(result);
                 nearestToDestinationResultTextView.setVisibility(View.VISIBLE);
